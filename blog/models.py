@@ -7,5 +7,5 @@ class Todo(models.Model):
     title = models.CharField(max_length=20) #할 일
     deadline = models.DateTimeField(blank=True, null=True) #마감일
 
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title

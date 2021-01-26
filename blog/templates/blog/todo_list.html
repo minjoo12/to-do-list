@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  {% for todo in todos %}
+    <div>
+      <p><a href="{% url 'todo_detail' pk=todo.pk %}">- {{ todo.title }}</a></p>
+      <p>마감일: {{ todo.deadline }}</p>
+    </div>
+  {% endfor %}
+{% endblock %}

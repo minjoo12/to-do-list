@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+        {% if todo.published_date %}
+                {{ todo.published_date }}
+        {% endif %}
+        <p>{{ todo.title }}</p>
+        <p>{{ todo.deadline }}</p>
+          {% if user.is_authenticated %}
+            <a class="btn btn-default" href="{% url 'todo_edit' pk=todo.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+          {% endif %}
+{% endblock %}

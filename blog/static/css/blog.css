@@ -1,0 +1,31 @@
+.page-header {
+    background-color: #8FBC8F;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header a, .page-header a:visited, .page-header a:active {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Black Han Sans'
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    font-size: 30pt;
+    float: right;
+    margin-top: 13px;
+    margin-right: 20px;
+}
+
+.content {
+  color: #595959;
+  font-family: 'Black Han Sans';
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.content a, .content a:visited {
+    color: #595959;
+    text-decoration: none;
+}
