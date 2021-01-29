@@ -8,5 +8,6 @@
         <p>{{ todo.deadline }}</p>
           {% if user.is_authenticated %}
             <a class="btn btn-default" href="{% url 'todo_edit' pk=todo.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a class="btn btn-default" href="{% url 'todo_remove' pk=todo.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
           {% endif %}
 {% endblock %}

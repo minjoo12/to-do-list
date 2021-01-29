@@ -34,3 +34,8 @@ def todo_edit(request, pk):
     else:
         form = TodoForm(instance=todo)
     return render(request, 'blog/todo_edit.html', {'form': form})
+
+def todo_remove(request, pk):
+    todo = get_object_or_404(Todo, pk=pk)
+    todo.delete()
+    return redirect('todo_list')
