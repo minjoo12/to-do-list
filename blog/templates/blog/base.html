@@ -10,7 +10,10 @@
   <body>
     <div class = "page-header">
       {% if user.is_authenticated %}
+        <p class="top-menu"><small><a href="{% url 'logout' %}">Logout</a></small></p>
         <a href="{% url 'todo_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+      {% else %}
+        <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
       {% endif %}
       <h1><a href="/">dduddu's To-Do-List</a></h1>
     </div>
